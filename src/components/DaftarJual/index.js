@@ -153,10 +153,7 @@ function DaftarProduct() {
                     key={item.id} 
                     imgProduct={item.image} 
                     nameProduct={item.name} 
-                    priceProduct={new Intl.NumberFormat("id-ID", {
-						style: "currency",
-						currency: "idr",
-					}).format(item.price)}
+                    priceProduct={item.price}
                     typeProduct={item.category} 
                     linkHref={`/product/detail?id=${item.id}`}
                   />
